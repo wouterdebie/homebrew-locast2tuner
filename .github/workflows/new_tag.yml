@@ -22,3 +22,4 @@ jobs:
           labels: automerge
           title: "New tag: ${{ github.event.client_payload.tag }}"
           commit-message: "New tag: ${{ github.event.client_payload.tag }}"
+          token: ${{ secrets.API_KEY }}
