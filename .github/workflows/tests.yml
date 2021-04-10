@@ -41,7 +41,7 @@ jobs:
           name: bottles
           path: "*.bottle.*"
       - uses: actions-ecosystem/action-add-labels@v1
-        if: always() && github.event_name == 'pull_request'
+        if: github.event_name == 'pull_request'
         with:
           github_token: ${{ secrets.API_KEY }}
           labels: pr-pull
