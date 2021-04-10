@@ -19,7 +19,6 @@ jobs:
       - name: Create Pull Request
         uses: peter-evans/create-pull-request@v3
         with:
-          labels: automerge
           title: "New tag: ${{ github.event.client_payload.tag }}"
           commit-message: "New tag: ${{ github.event.client_payload.tag }}"
           token: ${{ secrets.API_KEY }}
