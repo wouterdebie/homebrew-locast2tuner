@@ -1,10 +1,10 @@
-# Wouterdebie Locast2tuner
+# Wouterdebie Repo
 
 ## How do I install these formulae?
 
-`brew install wouterdebie/locast2tuner/<formula>`
+`brew install wouterdebie/repo/<formula>`
 
-Or `brew tap wouterdebie/locast2tuner` and then `brew install <formula>`.
+Or `brew tap wouterdebie/repo` and then `brew install <formula>`.
 
 ## Documentation
 
