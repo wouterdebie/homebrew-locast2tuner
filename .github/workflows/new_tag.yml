@@ -18,12 +18,7 @@ jobs:
           ./template.sh ${{ github.event.client_payload.tag }} > Formula/locast2tuner.rb
       - name: Create Pull Request
         uses: peter-evans/create-pull-request@v3
-      #     git config --local user.email "github-actions[bot]@users.noreply.github.com"
-      #     git config --local user.name "github-actions[bot]"
-      #     git diff-index --quiet HEAD || git commit -am "New version ${{ github.event.client_payload.tag }}"
-      # - name: Push changes
-      #   if: github.event.action == 'new_tag'
-      #   uses: ad-m/github-push-action@master
-      #   with:
-      #     github_token: ${{ secrets.GITHUB_TOKEN }}
-      #     branch: ${{ steps.vars.outputs.branch }}
+        with:
+          labels: automerge
+          title: "New tag: ${{ github.event.client_payload.tag }}"
+          commit-message: "New tag: ${{ github.event.client_payload.tag }}"
