@@ -7,31 +7,23 @@ jobs:
     if: github.event.action == 'new_tag'
     runs-on: ubuntu-latest
     steps:
-      - name: Set vars
-        id: vars
-        run: echo "::set-output name=branch::new_tag-${{ github.event.client_payload.tag }}-${RANDOM}"
       - name: Checkout homebrew tap repository
         uses: actions/checkout@master
-      - name: Create new branch
-        uses: peterjgrainger/action-create-branch@v2.0.1
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        with:
-          branch: ${{ steps.vars.outputs.branch }}
+
       - name: Event Information
         run: |
           echo "Event '${{ github.event.action }}': '${{ github.event.client_payload.tag }}'"
       - name: Update formula
         run: |
-          git checkout -b new_tag-${RANDOM}
           ./template.sh ${{ github.event.client_payload.tag }} > Formula/locast2tuner.rb
-          git config --local user.email "github-actions[bot]@users.noreply.github.com"
-          git config --local user.name "github-actions[bot]"
-          git diff-index --quiet HEAD || git commit -am "New version ${{ github.event.client_payload.tag }}"
-
-      - name: Push changes
-        if: github.event.action == 'new_tag'
-        uses: ad-m/github-push-action@master
-        with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          branch: ${{ steps.vars.outputs.branch }}
+      - name: Create Pull Request
+        uses: peter-evans/create-pull-request@v3
+      #     git config --local user.email "github-actions[bot]@users.noreply.github.com"
+      #     git config --local user.name "github-actions[bot]"
+      #     git diff-index --quiet HEAD || git commit -am "New version ${{ github.event.client_payload.tag }}"
+      # - name: Push changes
+      #   if: github.event.action == 'new_tag'
+      #   uses: ad-m/github-push-action@master
+      #   with:
+      #     github_token: ${{ secrets.GITHUB_TOKEN }}
+      #     branch: ${{ steps.vars.outputs.branch }}
