@@ -1,0 +1,26 @@
+name: Update Formula from new tag
+
+on: [repository_dispatch]
+
+jobs:
+  new_tag:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout homebrew tap repository
+        uses: actions/checkout@master
+      - name: Event Information
+        run: |
+          echo "Event '${{ github.event.action }}': '${{ github.event.client_payload.tag }}'"
+      - name: Update formula
+        if: github.event.action == 'new_tag'
+        run: |
+          ./template.sh ${{ github.event.client_payload.tag }} > Formula/locast2tuner.sh
+          git config --local user.email "github-actions[bot]@users.noreply.github.com"
+          git config --local user.name "github-actions[bot]"
+          git commit -am "New version ${{ github.event.client_payload.tag }}"
+      - name: Push changes
+        if: github.event.action == 'new_tag'
+        uses: ad-m/github-push-action@master
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          branch: "locast2tuner"
