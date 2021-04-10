@@ -8,16 +8,18 @@ jobs:
     steps:
       - name: Checkout homebrew tap repository
         uses: actions/checkout@master
+        with:
+          ref: locast2tuner
       - name: Event Information
         run: |
           echo "Event '${{ github.event.action }}': '${{ github.event.client_payload.tag }}'"
       - name: Update formula
         if: github.event.action == 'new_tag'
         run: |
-          ./template.sh ${{ github.event.client_payload.tag }} > Formula/locast2tuner.sh
+          ./template.sh ${{ github.event.client_payload.tag }} > Formula/locast2tuner.rb
           git config --local user.email "github-actions[bot]@users.noreply.github.com"
           git config --local user.name "github-actions[bot]"
-          git commit -am "New version ${{ github.event.client_payload.tag }}"
+          git diff-index --quiet HEAD || git commit -am "New version ${{ github.event.client_payload.tag }}"
       - name: Push changes
         if: github.event.action == 'new_tag'
         uses: ad-m/github-push-action@master
