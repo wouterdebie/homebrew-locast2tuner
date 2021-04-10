@@ -4,6 +4,7 @@ on: [repository_dispatch]
 
 jobs:
   new_tag:
+    name: "New tag received: ${{ github.event.client_payload.tag }}"
     if: github.event.action == 'new_tag'
     runs-on: ubuntu-latest
     steps:
