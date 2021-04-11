@@ -1,8 +1,8 @@
 name: brew test-bot
 on:
-  push:
-    branches:
-      - main
+  # push:
+  # branches:
+  #   - main
   pull_request:
 jobs:
   test-bot:
@@ -38,6 +38,7 @@ jobs:
       - name: Rename bottles
         run: |
           find .
+          cat *.json
           for i in *.bottle.*; do mv $i $(echo $i | sed s/--/-/);done
       - name: Upload bottles as artifact
         if: always() && github.event_name == 'pull_request'
