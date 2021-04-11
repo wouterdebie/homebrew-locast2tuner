@@ -37,9 +37,12 @@ jobs:
         if: github.event_name == 'pull_request'
       - name: Rename bottles
         run: |
-          find .
+          ls
           cat *.json
           for i in *.bottle.*; do mv $i $(echo $i | sed s/--/-/);done
+          for i in *.json; do sed -i.bu 's/--/-/g' $i;done
+          ls
+          cat *.json
       - name: Upload bottles as artifact
         if: always() && github.event_name == 'pull_request'
         uses: actions/upload-artifact@main
