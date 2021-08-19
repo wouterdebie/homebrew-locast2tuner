@@ -1,15 +1,9 @@
 class Locast2tuner < Formula
   desc "Rust implementation of locast2dvr"
   homepage "https://github.com/wouterdebie/locast2tuner"
-  url "https://github.com/wouterdebie/locast2tuner/archive/refs/tags/v0.2.7.tar.gz"
-  sha256 "70f04748650c813f4c36e01f31d6c02a1716901e5fdad56043476ec2b2367982"
+  url "https://github.com/wouterdebie/locast2tuner/archive/refs/tags/v0.2.8.tar.gz"
+  sha256 "1a491dd592619cf58007d27c54448c230f6396ff117af4b59472b0b09a568c92"
   license "MIT"
-
-  bottle do
-    root_url "https://github.com/wouterdebie/homebrew-repo/releases/download/locast2tuner-0.2.7"
-    sha256 cellar: :any_skip_relocation, catalina:     "331546cc6b2a90105d1ca91d628be93f1591d2dad17abc32de55e85be5dda0e1"
-    sha256 cellar: :any_skip_relocation, x86_64_linux: "2953950d7f119bbd05208f6ec2f2b9c7d0309d3ec635244ac4068cc9dad1fab1"
-  end
 
   depends_on "rust" => :build
 
