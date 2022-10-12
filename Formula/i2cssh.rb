@@ -1,7 +1,7 @@
 class I2cssh < Formula
   include Language::Python::Virtualenv
 
-  desc "Shiny new formula"
+  desc "i2cssh"
   homepage "http://github.com/wouterdebie/i2cssh"
   url "https://files.pythonhosted.org/packages/d7/78/678b97baf799f81f2d7da077564452c3f559436acc7dc8d0921e72095817/i2cssh-0.0.3.tar.gz"
   sha256 "553d580b6461d5288cb49bbb5590fb52284272baee7d245b5b113c52f40503e0"
@@ -24,8 +24,8 @@ class I2cssh < Formula
   end
 
   resource "protobuf" do
-    url "https://files.pythonhosted.org/packages/56/23/f716074d2ed0af82c0d1da1eaa5e4bb086236568405f13ab0bbaaa6307fb/protobuf-4.21.7.tar.gz"
-    sha256 "71d9dba03ed3432c878a801e2ea51e034b0ea01cf3a4344fb60166cb5f6c8757"
+    url "https://files.pythonhosted.org/packages/0e/25/693cd589793e7ae429ef76ab08f74b7866d342fd079cc4c723141a9660d3/protobuf-4.21.6.tar.gz"
+    sha256 "6b1040a5661cd5f6e610cbca9cfaa2a17d60e2bb545309bc1b278bb05be44bdd"
   end
 
   resource "PyYAML" do
