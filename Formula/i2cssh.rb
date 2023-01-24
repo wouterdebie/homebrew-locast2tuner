@@ -3,8 +3,8 @@ class I2cssh < Formula
 
   desc "Shiny new formula"
   homepage "http://github.com/wouterdebie/i2cssh"
-  url "https://files.pythonhosted.org/packages/1d/11/3d91a6631c0ccb1eb5c624af17ad0c9388059d99eaeef188c8a8cd1e4a82/i2cssh-0.0.11.tar.gz"
-  sha256 "3219b4bb6500c063554ba687858aa9a76fbc2000d97c2be68b186b3bfc6ef30a"
+  url "https://files.pythonhosted.org/packages/0d/db/821565fcc77e4d7212c63887aacab629047a2a7ea0812da456506418866e/i2cssh-0.0.12.tar.gz"
+  sha256 "0b4d3211b04d5ba2648cf434473aa95683d0e51e101be7d415aa1bbb6ed732b9"
 
   depends_on "python3"
 
