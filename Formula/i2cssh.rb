@@ -3,8 +3,8 @@ class I2cssh < Formula
 
   desc "Shiny new formula"
   homepage "http://github.com/wouterdebie/i2cssh"
-  url "https://files.pythonhosted.org/packages/23/bd/17965d94d44caa04f19075df788af0890698bf5dd11e2d7eee412f829583/i2cssh-0.0.15.tar.gz"
-  sha256 "f88d73f83fe5f1c11db7a9ae6c48ff8f5f603ae0e6b81dc12a86160807c4e107"
+  url "https://files.pythonhosted.org/packages/47/04/454fc93d64f902d6571cb5b6f03a2c315fe7ca7636c73e3349493e486058/i2cssh-0.0.16.tar.gz"
+  sha256 "1ac66c2e454489fa7dca7b1eed7b419c28b515beb0ba621b522c9138e8960208"
 
   depends_on "python3"
 
@@ -24,8 +24,8 @@ class I2cssh < Formula
   end
 
   resource "protobuf" do
-    url "https://files.pythonhosted.org/packages/4a/e0/9da6a25f4ac72455f5da9d4af8d75144d15e29d415220773850e0ec23d3e/protobuf-4.22.1.tar.gz"
-    sha256 "dce7a55d501c31ecf688adb2f6c3f763cf11bc0be815d1946a84d74772ab07a7"
+    url "https://files.pythonhosted.org/packages/e2/86/44a1e4990a81cb4248a2091a182bb76a6417fddcaff560ceb6b44eb05c55/protobuf-4.22.3.tar.gz"
+    sha256 "23452f2fdea754a8251d0fc88c0317735ae47217e0d27bf330a30eec2848811a"
   end
 
   resource "PyYAML" do
