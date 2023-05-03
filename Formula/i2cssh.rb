@@ -3,8 +3,8 @@ class I2cssh < Formula
 
   desc "Shiny new formula"
   homepage "http://github.com/wouterdebie/i2cssh"
-  url "https://files.pythonhosted.org/packages/47/04/454fc93d64f902d6571cb5b6f03a2c315fe7ca7636c73e3349493e486058/i2cssh-0.0.16.tar.gz"
-  sha256 "1ac66c2e454489fa7dca7b1eed7b419c28b515beb0ba621b522c9138e8960208"
+  url "https://files.pythonhosted.org/packages/97/d5/7d5fbf5bf42bef86984d5912e8f5a01525e01cc35462e7032c0c2e72a54e/i2cssh-0.0.17.tar.gz"
+  sha256 "9ce7c313c062559daac86d32a7ee3cbe050d0e27de62ec020642561bd0048104"
 
   depends_on "python3"
 
@@ -34,8 +34,8 @@ class I2cssh < Formula
   end
 
   resource "websockets" do
-    url "https://files.pythonhosted.org/packages/bd/90/6b5802fad3992d6eac7163216e0389a72475cbb57b23005135190e96d160/websockets-11.0.1.tar.gz"
-    sha256 "369410925b240b30ef1c1deadbd6331e9cd865ad0b8966bf31e276cc8e0da159"
+    url "https://files.pythonhosted.org/packages/9d/67/68e568bb4a0617529db2723c75958223b70b95921cd114b5fd13567db4d8/websockets-11.0.2.tar.gz"
+    sha256 "b1a69701eb98ed83dd099de4a686dc892c413d974fa31602bc00aca7cb988ac9"
   end
 
   def install
