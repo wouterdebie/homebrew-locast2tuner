@@ -3,8 +3,8 @@ class I2cssh < Formula
 
   desc "Shiny new formula"
   homepage "http://github.com/wouterdebie/i2cssh"
-  url "https://files.pythonhosted.org/packages/14/56/e5334abe2b45fdfc98ed9fce74a4a86067d9655f19ddbf42138e37f4b2f7/i2cssh-0.1.10.tar.gz"
-  sha256 "63cd0f90dadd377e96664decfacd5411d66a8f0a7289f7179c77405f56dcde2e"
+  url "https://files.pythonhosted.org/packages/bb/1b/f919900a4d53b2cef1918728f6ba14ecdc4321a3414fe262fd3f9ae39c54/i2cssh-0.1.11.tar.gz"
+  sha256 "ebfb6607d67dd69c5e49ba351e59d4307e120ac35200a564972558be5d6ed64b"
 
   depends_on "python3"
 
@@ -19,8 +19,8 @@ class I2cssh < Formula
   end
 
   resource "iterm2" do
-    url "https://files.pythonhosted.org/packages/f5/8b/02049f33cbb3a15d414eaa9225480707f87575d54d61362e7e9a268dcc98/iterm2-2.6.tar.gz"
-    sha256 "acabe7af40b8f264e48db1b21e1bcdce027dee9e6627b178c14f1930f615feb3"
+    url "https://files.pythonhosted.org/packages/4f/eb/47bb125fd3b32969f3bc8e0b8997bbe308484ac4d04331ae1e6199ae2c0f/iterm2-2.7.tar.gz"
+    sha256 "f6f0bec46c32cecaf7be7fd82296ec4697d4bf2101f0c4aab24cc123991fa230"
   end
 
   resource "protobuf" do
