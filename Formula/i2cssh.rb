@@ -3,14 +3,14 @@ class I2cssh < Formula
 
   desc "Shiny new formula"
   homepage "http://github.com/wouterdebie/i2cssh"
-  url "https://files.pythonhosted.org/packages/bb/1b/f919900a4d53b2cef1918728f6ba14ecdc4321a3414fe262fd3f9ae39c54/i2cssh-0.1.11.tar.gz"
-  sha256 "ebfb6607d67dd69c5e49ba351e59d4307e120ac35200a564972558be5d6ed64b"
+  url "https://files.pythonhosted.org/packages/0e/8f/b136642d40025a8be6b56374f244e19da37576cc50a896d63cfadc3be5fd/i2cssh-0.1.12.tar.gz"
+  sha256 "1f9d897483e2011b4defec8d2d12a7b2b9a3581d8c3c5ecb363069ae28a556a9"
 
   depends_on "python3"
 
   resource "click" do
-    url "https://files.pythonhosted.org/packages/72/bd/fedc277e7351917b6c4e0ac751853a97af261278a4c7808babafa8ef2120/click-8.1.6.tar.gz"
-    sha256 "48ee849951919527a045bfe3bf7baa8a959c423134e1a5b98c05c20ba75a1cbd"
+    url "https://files.pythonhosted.org/packages/96/d3/f04c7bfcf5c1862a2a5b845c6b2b360488cf47af55dfa79c98f6a6bf98b5/click-8.1.7.tar.gz"
+    sha256 "ca9853ad459e787e2192211578cc907e7594e294c7ccc834310722b41b9ca6de"
   end
 
   resource "click-option-group" do
@@ -24,18 +24,18 @@ class I2cssh < Formula
   end
 
   resource "protobuf" do
-    url "https://files.pythonhosted.org/packages/ea/ab/ae590cd71f5a50cd9e0979593e217529b532a001e46c2dd0811c8697f4ad/protobuf-5.26.0.tar.gz"
-    sha256 "82f5870d74c99addfe4152777bdf8168244b9cf0ac65f8eccf045ddfa9d80d9b"
+    url "https://files.pythonhosted.org/packages/b1/a4/4579a61de526e19005ceeb93e478b61d77aa38c8a85ad958ff16a9906549/protobuf-5.28.2.tar.gz"
+    sha256 "59379674ff119717404f7454647913787034f03fe7049cbef1d74a97bb4593f0"
   end
 
   resource "PyYAML" do
-    url "https://files.pythonhosted.org/packages/cd/e5/af35f7ea75cf72f2cd079c95ee16797de7cd71f29ea7c68ae5ce7be1eda0/PyYAML-6.0.1.tar.gz"
-    sha256 "bfdf460b1736c775f2ba9f6a92bca30bc2095067b8a9d77876d1fad6cc3b4a43"
+    url "https://files.pythonhosted.org/packages/54/ed/79a089b6be93607fa5cdaedf301d7dfb23af5f25c398d5ead2525b063e17/pyyaml-6.0.2.tar.gz"
+    sha256 "d584d9ec91ad65861cc08d42e834324ef890a082e591037abe114850ff7bbc3e"
   end
 
   resource "websockets" do
-    url "https://files.pythonhosted.org/packages/2e/62/7a7874b7285413c954a4cca3c11fd851f11b2fe5b4ae2d9bee4f6d9bdb10/websockets-12.0.tar.gz"
-    sha256 "81df9cbcbb6c260de1e007e58c011bfebe2dafc8435107b0537f393dd38c8b1b"
+    url "https://files.pythonhosted.org/packages/e2/73/9223dbc7be3dcaf2a7bbf756c351ec8da04b1fa573edaf545b95f6b0c7fd/websockets-13.1.tar.gz"
+    sha256 "a3b3366087c1bc0a2795111edcadddb8b3b59509d5db5d7ea3fdd69f954a8878"
   end
 
   def install
