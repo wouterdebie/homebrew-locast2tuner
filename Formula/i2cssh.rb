@@ -3,8 +3,8 @@ class I2cssh < Formula
 
   desc "Shiny new formula"
   homepage "http://github.com/wouterdebie/i2cssh"
-  url "https://files.pythonhosted.org/packages/16/84/ad35ec5194aa996820750c97c4715589498f434e69b9fef07428282e7150/i2cssh-0.1.13.tar.gz"
-  sha256 "9a665849f64faaf11bf37dfe50f6ab61f540e04196566f67238525dd960822b3"
+  url "https://files.pythonhosted.org/packages/ed/20/414bc65025cf20783e6044d36ef8480ae532dd2acd1d79f73f18b31a4329/i2cssh-0.2.0.tar.gz"
+  sha256 "3b8567d2b903281a656c48e7dcefdb34a8f532476dc38697c4ef7e60beda0dd4"
 
   depends_on "python3"
 
@@ -19,8 +19,8 @@ class I2cssh < Formula
   end
 
   resource "iterm2" do
-    url "https://files.pythonhosted.org/packages/4f/eb/47bb125fd3b32969f3bc8e0b8997bbe308484ac4d04331ae1e6199ae2c0f/iterm2-2.7.tar.gz"
-    sha256 "f6f0bec46c32cecaf7be7fd82296ec4697d4bf2101f0c4aab24cc123991fa230"
+    url "https://files.pythonhosted.org/packages/9e/fc/869958548f8465dd287c747e427e316d3bd1c26db85c9b0008b1864d9629/iterm2-2.9.tar.gz"
+    sha256 "168475ed496806d160de946eaeab870b319ac927a150f855b664263648564f3e"
   end
 
   resource "protobuf" do
@@ -31,6 +31,11 @@ class I2cssh < Formula
   resource "PyYAML" do
     url "https://files.pythonhosted.org/packages/54/ed/79a089b6be93607fa5cdaedf301d7dfb23af5f25c398d5ead2525b063e17/pyyaml-6.0.2.tar.gz"
     sha256 "d584d9ec91ad65861cc08d42e834324ef890a082e591037abe114850ff7bbc3e"
+  end
+
+  resource "shellingham" do
+    url "https://files.pythonhosted.org/packages/58/15/8b3609fd3830ef7b27b655beb4b4e9c62313a4e8da8c676e142cc210d58e/shellingham-1.5.4.tar.gz"
+    sha256 "8dbca0739d487e5bd35ab3ca4b36e11c4078f3a234bfce294b0a0291363404de"
   end
 
   resource "websockets" do
